@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Smalife</title>
+    <!-- https://electronjs.org/docs/tutorial/security#csp-meta-tag -->
+    <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline';" />
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="script.js"></script>
+    <script type="text/javascript" src="animations.js"></script>
+    <script type="text/javascript" src="imagesload.js"></script>
+    <script type="text/javascript" src="controls.js"></script>
+    <script type="text/javascript" src="fills.js"></script>
+  </head>
+  <body scroll='no'>
+    <div class="topBar">
+      <button id="reset" class="control">Сбросить</button>
+      <button id="pause" class="control">Пауза</button>
+      <button id="x1" class="control">х1</button>
+      <button id="x2" class="control">х2</button>
+      <button id="x4" class="control">х4</button>
+      <p>Скорость:</p>
+      <button id="large" class="control">Большой</button>
+      <button id="small" class="control">Обычный</button>
+      <p>Размер<br/>поля:</p>
+    </div>
+    <div class="middleBar">
+      <div id="infoBox" class="controlsBox">
+        <p class="boxTitle">Справка</p>
+      </div>
+
+      <div id="canvasBox">
+        <canvas id="myCanvas"></canvas>
+      </div>
+
+      <div id="controlsBox" class="controlsBox">
+        <div class="boxTitle">Фигуры</div>
+      </div>
+
+      <div id="funcsBox" class="controlsBox">
+        <div class="boxTitle">Заливки</div>
+      </div>
+
+    </div>
+  </body>
+</html>
