@@ -1,2 +1,2 @@
-# Chickens in the corn
-A simple game on JS
+# Life
+A simple project
